@@ -15,7 +15,8 @@ devtools::install_github("Matt-A-Bennett/miscfunctions")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+Given a string abbreviation of a day or a month, transform it into the
+appropriate number:
 
 ``` r
 library(miscfunctions)
