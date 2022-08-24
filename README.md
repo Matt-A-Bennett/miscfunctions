@@ -10,7 +10,6 @@
 You can install the development version of miscfunctions like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
 devtools::install_github("Matt-A-Bennett/miscfunctions")
 ```
 
@@ -20,7 +19,6 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(miscfunctions)
-## basic example code
 
 date_str_to_num("Sun")
 #> 1
