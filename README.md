@@ -16,10 +16,12 @@ devtools::install_github("Matt-A-Bennett/miscfunctions")
 ## Example
 
 Given a string abbreviation of a day or a month, transform it into the
-appropriate number:
+appropriate number, or vice versa:
 
 ``` r
 library(miscfunctions)
+
+# convert date string to number
 
 date_str_to_num("Sun")
 #> 1
@@ -29,5 +31,16 @@ date_str_to_num("Mon")
 
 date_str_to_num("Dec")
 #> 12
+
+# convert number to date string
+
+date_num_to_str(1, num_to = "day")
+#> "Sun"
+
+date_num_to_str(2, num_to = "day", lower = TRUE, longform = TRUE)
+#> "monday"
+
+date_num_to_str(12, num_to = "month")
+#> "Dec"
 ```
 
