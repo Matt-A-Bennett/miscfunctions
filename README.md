@@ -1,8 +1,8 @@
 # miscfunctions
 
 <!-- badges: start -->
-[![Codecov test coverage](https://codecov.io/gh/Matt-A-Bennett/miscfunctions/branch/main/graph/badge.svg)](https://app.codecov.io/gh/Matt-A-Bennett/miscfunctions?branch=main)
 [![R-CMD-check](https://github.com/Matt-A-Bennett/miscfunctions/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/Matt-A-Bennett/miscfunctions/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/Matt-A-Bennett/miscfunctions/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/Matt-A-Bennett/miscfunctions/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
 ## Installation
