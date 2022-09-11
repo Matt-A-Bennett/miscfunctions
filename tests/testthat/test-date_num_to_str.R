@@ -5,7 +5,7 @@ test_that("conversion works", {
 })
 
 test_that("longform works", {
-  expect_equal(date_num_to_str(1, num_to = "day", longform = TRUE), "Sunday")
+  expect_equal(date_num_to_str(1, num_to = "day", longform = TRUE), "Sunday!!!")
   expect_equal(date_num_to_str(7, num_to = "day", longform = TRUE), "Saturday")
   expect_equal(date_num_to_str(12, num_to = "month", longform = TRUE), "December")
 })
