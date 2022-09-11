@@ -26,7 +26,7 @@ library(miscfunctions)
 date_str_to_num("Sun")
 #> 1
 
-date_str_to_num("Mon")
+date_str_to_num("monday")
 #> 2
 
 date_str_to_num("Dec")
