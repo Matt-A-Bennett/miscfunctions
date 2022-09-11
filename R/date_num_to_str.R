@@ -28,9 +28,14 @@
 date_num_to_str <- function(x, num_to, lower = FALSE, longform = FALSE) {
 
     if (is.na(x)) return (NA)
-    if (!is.numeric(x)) stop("input must be numeric")
-    if (x <= 0 || x > 12) stop("numbers must be between 1 and 7 for num_to = 'day' and between 1 and 12 for num_to = 'month'")
-    if (num_to == "day" &&  x > 7) stop("numbers must be between 1 and 7 for num_to = 'day' and between 1 and 12 for num_to = 'month'")
+
+    stopifnot("input must be numeric" = is.numeric(x)) 
+    stopifnot("x must be positive" = x > 0)
+    if (num_to == 'day') {
+        stopifnot("x must be between 1 and 7 for num_to = 'day'" = x <= 7)
+    } else if (num_to == 'month') {
+        stopifnot("x must be between 1 and 12 for num_to = 'month'" = x <= 12)
+    }
 
 
     days = c("Sunday",   "Monday", "Tueday",   "Wednesday",

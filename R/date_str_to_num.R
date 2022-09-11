@@ -22,8 +22,9 @@
 date_str_to_num <- function(x) {
 
     if (is.na(x)) return (NA)
-    if (!is.character(x)) stop("input must be of type character")
-    if (nchar(x) <= 2) stop("string must be at least 3 characters")
+
+    stopifnot("input must be of type character" = is.character(x)) 
+    stopifnot ("string must be at least 3 characters" = nchar(x) >= 3) 
 
     x <- substr(tolower(x), 1, 3)
 
