@@ -23,14 +23,14 @@ test_that("both longform and capitalisation work", {
 })
 
 test_that("bad-numbers fail", {
-  expect_error(date_num_to_str(Inf, num_to = "day"), "x must be between 1 and 7 for num_to = 'day'")
-  expect_error(date_num_to_str(8, num_to = "day"), "x must be between 1 and 7 for num_to = 'day'")
-  expect_error(date_num_to_str(-1, num_to = "month"), "x must be positive")
-  expect_error(date_num_to_str(0, num_to = "month"), "x must be positive")
-  expect_error(date_num_to_str(13, num_to = "month"), "x must be between 1 and 12 for num_to = 'month'")
+  expect_error(date_num_to_str(Inf, num_to = "day"))
+  expect_error(date_num_to_str(8, num_to = "day"))
+  expect_error(date_num_to_str(-1, num_to = "month"))
+  expect_error(date_num_to_str(0, num_to = "month"))
+  expect_error(date_num_to_str(13, num_to = "month"))
 })
 
 test_that("edge cases are handled", {
   expect_error(date_num_to_str(NA, num_to = "day"), NA)
-  expect_error(date_num_to_str("Sat", num_to = "day"), "input must be numeric")
+  expect_error(date_num_to_str("Sat", num_to = "day"))
 })

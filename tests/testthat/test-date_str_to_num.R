@@ -17,10 +17,10 @@ test_that("long form works", {
 })
 
 test_that("non-dates fail", {
-  expect_error(date_str_to_num("hello"), "this string doesn't look like a day or a month")
-  expect_error(date_str_to_num("fr"), "string must be at least 3 characters")
-  expect_error(date_str_to_num(""), "string must be at least 3 characters")
-  expect_error(date_str_to_num(0), "input must be of type character")
+  expect_error(date_str_to_num("hello"))
+  expect_error(date_str_to_num("fr"))
+  expect_error(date_str_to_num(""))
+  expect_error(date_str_to_num(0))
 })
 
 test_that("edge cases are handled", {
