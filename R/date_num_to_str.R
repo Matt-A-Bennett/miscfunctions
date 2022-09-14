@@ -38,10 +38,10 @@ date_num_to_str <- function(x, num_to, lower = FALSE, longform = FALSE) {
     }
 
 
-    days = c("Sunday",   "Monday", "Tueday",   "Wednesday",
+    days = c("Sunday",   "Monday", "Tuesday",   "Wednesday",
              "Thursday", "Friday", "Saturday")
 
-    months = c("January",   "Febuary", "March",    "April",
+    months = c("January",   "February", "March",    "April",
                "May",       "June",    "July",     "August",
                "September", "October", "November", "December")
 
