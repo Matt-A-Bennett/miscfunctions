@@ -9,20 +9,20 @@
 #' @return prints the regex pattern, the original string where matches are
 #' indicated by a horizontal line above
 #' @examples 
-#' str_showmatches("hello world!", "l.*r")
+#' str_print_regex_matches("hello world!", "l.*r")
 #' #> pattern:  l.*r
 #' #> matches:    _______
 #' #> string :  hello world!
 #' 
-#' str_showmatches("hello world!", "[a-z]")
+#' str_print_regex_matches("hello world!", "[a-z]")
 #' #> pattern:  [a-z]
 #' #> matches:  _____ _____
 #' #> string :  hello world!
 #' 
 #' @export
 #'
-str_showmatches <- function(str, pattern) { 
-    match_display <- compute_match_display(str, pattern)
+str_print_regex_matches <- function(str, pattern) { 
+    match_display <- compute_regex_match_display(str, pattern)
     # put overline above the original string
     cat("pattern: ", pattern, "\n")
     cat("matches: ", match_display, "\n")

@@ -2,4 +2,4 @@
 
 export(date_num_to_str)
 export(date_str_to_num)
-export(str_showmatches)
+export(str_print_regex_matches)

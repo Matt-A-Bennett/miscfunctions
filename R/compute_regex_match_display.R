@@ -3,20 +3,20 @@
 #' 
 #' @description
 #' Compute which parts of a string are matched by a regex. Used by the
-#' str_showmatches() function.
+#' str_print_regex_matches() function.
 #'
 #' @param str string which regex will be matched against
 #' @param pattern string containing the regex pattern
 #' @return a string of underscore characters in places matched by the regex
 #' (and whitespace for non-matching characters)
 #' @examples 
-#' str_showmatches("hello world!", "l.*r")
+#' str_print_regex_matches("hello world!", "l.*r")
 #' #> "  _______   "
 #' 
-#' str_showmatches("hello world!", "[a-z]")
+#' str_print_regex_matches("hello world!", "[a-z]")
 #' #> "_____ _____ "
 #' 
-compute_match_display <- function(str, pattern) {
+compute_regex_match_display <- function(str, pattern) {
     positions <- stringi::stri_locate_all_regex(str, pattern)
     match_display <- strrep(" ", nchar(str))
     overline <- strrep("_", nchar(str))
