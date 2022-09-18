@@ -27,5 +27,7 @@ str_print_regex_matches <- function(str, pattern) {
     cat("pattern: ", pattern, "\n")
     cat("matches: ", match_display, "\n")
     cat("string : ", str, "\n")
+    # returning invisibly allows <str> to flow in a pipeline
+    return (invisible(str))
 }
 
